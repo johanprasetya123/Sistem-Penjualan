@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Furniture Xionco Admin Dashboard</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>🪑 XIONCO</h2>
+    <ul>
+      <li><a href="/">📋 Daftar Pembelian</a></li>
+      <li><a href="/tambah">➕ Tambah Pembelian</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <h1>Admin Dashboard</h1>
+      <p>Kelola pembelian furniture toko Xionco</p>
+    </header>
+
+    <section>
+      <%- body %>
+    </section>
+
+    <%- include('partials/footer') %>
+  </div>
+</body>
+</html>

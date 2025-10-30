@@ -1,0 +1,31 @@
+<%- include('layout', { body: `
+<h2>Daftar Pembelian</h2>
+
+<table class="modern-table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Produk</th>
+      <th>Jumlah</th>
+      <th>Total (Rp)</th>
+      <th>Status</th>
+      <th>Tanggal</th>
+      <th>Aksi</th>
+    </tr>
+  </thead>
+  <tbody>
+    ${pembelian.length === 0 ? `
+      <tr><td colspan="7" style="text-align:center;">Belum ada data pembelian</td></tr>
+    ` : pembelian.map(p => `
+      <tr>
+        <td>${p.id}</td>
+        <td>${p.nama_produk}</td>
+        <td>${p.jumlah}</td>
+        <td>${p.total.toLocaleString()}</td>
+        <td class="${p.status === 'SUKSES' ? 'status-ok' : 'status-cancel'}">${p.status}</td>
+        <td>${new Date(p.tanggal).toLocaleString()}</td>
+        <td>${p.status === 'SUKSES' ? `<a href="/cancel/${p.id}" class="btn-cancel">❌ Batalkan</a>` : '-'}</td>
+      </tr>`).join('')}
+  </tbody>
+</table>
+`}) %>

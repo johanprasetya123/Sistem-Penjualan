@@ -1,0 +1,156 @@
+/* ===== GLOBAL STYLE ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #181818;
+  color: #f1f1f1;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 220px;
+  background: #202020;
+  padding: 30px 20px;
+  height: 100vh;
+  position: fixed;
+  box-shadow: 3px 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar h2 {
+  color: #f1c40f;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+  color: #ddd;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color: #f1c40f;
+  text-decoration: underline;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-content {
+  margin-left: 240px;
+  padding: 20px 40px;
+  flex: 1;
+}
+
+header h1 {
+  margin: 0;
+  color: #f1c40f;
+}
+
+header p {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+/* ===== TABLE ===== */
+.modern-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #242424;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.modern-table th, .modern-table td {
+  padding: 12px;
+  border-bottom: 1px solid #333;
+  text-align: center;
+}
+
+.modern-table th {
+  background: #f1c40f;
+  color: #181818;
+}
+
+.status-ok {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.status-cancel {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* ===== BUTTONS ===== */
+.btn-cancel {
+  background: #e74c3c;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.btn-cancel:hover {
+  background: #c0392b;
+}
+
+.btn-primary {
+  background: #f1c40f;
+  border: none;
+  color: #181818;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #d4ac0d;
+}
+
+/* ===== FORM CARD ===== */
+.card-form {
+  background: #242424;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 0 10px #000;
+}
+
+.card-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.card-form input, .card-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background: #181818;
+  color: #f1f1f1;
+  border: 1px solid #555;
+  border-radius: 4px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
+  font-size: 14px;
+}
